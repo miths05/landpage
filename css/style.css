@@ -1,0 +1,337 @@
+ * {
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
+      
+    }
+
+.container{
+    max-width: 1000px;
+    width: 95%;
+    height: auto;
+    margin: 10px auto;
+    border: 2px solid black;
+    background-color: rgb(249, 246, 246);
+    box-shadow: 0px 0px 25px  #000000;
+    padding: 5px;
+}
+
+.main-header {        /*for positioning header*/
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+
+}
+
+.main-header > h1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(231, 231, 231);
+    padding: 20px;
+    width: 40%;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.search-bar{        /*for positioning search bar*/
+    margin-left: auto;
+    margin-top: 50px;
+    width: 30%;
+}
+
+.search-bar form > input[type="search"] {    /*for styling search bar*/
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.search-bar form > button[type="submit"] {   /*for styling search button*/
+    border: 1px solid black; 
+    padding:11px;
+    color:aliceblue;
+    background-color: #000000;
+    margin-left: -5px; 
+}
+
+.main-menu{
+    background-color: #000000;
+    color: aliceblue;
+}
+
+.main-menu > ul {      /*main menu styling*/
+    display: flex;
+    justify-content: flex-start;
+        
+    padding: 0px;
+    margin: 0px;
+    list-style: none;    
+}
+
+.main-menu > ul > li > a{       /*styling of the text in the main menu*/
+    display: inline-block;  
+    padding: 15px;
+    color:aliceblue;
+}
+.main-menu > ul > li > a:hover{
+    background-color: brown;
+    padding: 20px;
+}
+.ISPager{
+    margin-top: -50px !important;
+}
+
+/*body content positioning*/
+.Main-Content{  
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    color:rgb(0, 0, 0);
+    
+}
+.content{           
+    width:80%;
+    padding: 20px;
+}
+
+.content h3 {
+    font-size: small;
+    color: gray;
+}
+
+.Sidebar{                /*STYLING SIDEBAR*/
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+
+    width: 20%;
+    margin-left: auto ;
+    padding: 20px;
+}
+.widget > ul  {
+    list-style: none;
+    padding: 0%;
+    margin: auto;
+} 
+
+.widget > ul > li {
+    display: block;
+    padding: 10px;
+    margin: auto;
+}
+.widget > ul > li > a{
+    color:#fff;
+    font-weight: bold;
+    font-size: large;
+    margin: auto;
+    padding: 15PX;
+}
+.widget > ul > li > a:hover{
+    background-color:rgb(62, 179, 243);
+    color: #000000;   
+}
+
+/*footer positioning*/
+
+.footer-widget-holder{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(231, 231, 231);
+    color: #000000;
+    margin-top: 25px;
+}
+
+.footer-widget{
+    padding: 20px;
+    font-size: small;
+    font-weight: bold;
+}
+.footer-widget > ul  {
+    list-style: none;
+    padding: 0%;
+} 
+.footer-widget > ul > li {
+    padding: 5px;
+}
+.footer-widget > ul > li > a{
+    color:#000000;
+    padding: 10PX;
+}
+.footer-widget > ul > li > a:hover{
+    background-color:rgb(62, 179, 243);
+    color: #000000;   
+}
+.site-footer{
+background-color: #000000;
+color: #ffffff;
+margin: 0px;
+padding: 20px;
+text-align: center;
+
+}
+
+
+                                        /*SERVICES AND PRODUCTS*/
+
+.Services-holder{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.service{
+    border: #000000 1px solid;
+    padding: 5px;
+
+}
+.service > a{
+    color:#464646;
+}
+.service > a:hover{
+    background-color: #000000;
+    padding: 10px;
+    color: #fff;
+}
+                                        /* Products */
+
+.Products-holder{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.Product{
+    border: #000000 1px solid;
+    padding: 5px;
+
+}
+.Product > a{
+    color:#464646;
+}
+.Product > a:hover{
+    background-color: #000000;
+    padding: 10px;
+    color: #fff;
+}   
+
+.Product > img{
+    width: 100%;
+    height: auto;
+}
+
+                                                /*about us*/
+.about-holder{
+     background-color: rgb(231, 231, 231);
+    padding: 20px;
+    margin-top: 10px;
+}
+                                            /*Contact us*/
+.Contact-holder iframe{
+    width:100%;
+    height: 400px;
+    margin: 10px 0px;
+}
+
+.CONTACT-DETAILS{
+    display: flex;
+    justify-content:space-between;
+   
+    margin: 10px 5px;
+}
+
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form input, textarea{
+    width: 100%;
+
+    padding: 10px;
+    margin: 10px 5px;  
+    border: #464646 3px solid;
+}
+
+.Contact-holder > h2{
+    margin: 10px;
+}
+.contact-form  button{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+.mobile-menu{
+    display: none !important;
+}
+
+                                            /*MOBILE  RESPONSIVE*/
+
+@media screen and (max-width: 750px) {
+
+    /*header*/
+    .main-header{
+        display: flex;
+        flex-direction: column !important;
+        text-align: center;
+    }
+    .search-bar{        
+        /* margin-left: auto; */
+        margin:auto;
+    }
+
+    /*MOBILE-MAIN-MENU*/
+    
+    .mobile-menu{
+        display: flex !important;
+        justify-content: space-between !important;
+
+    }
+
+    .desktop-menu{
+        /* display:flex !important;
+        flex-direction: column !important; */
+        display: none !important;
+    }
+
+    /*IMAGE SLIDER*/
+    #adaptive > a > li > img{
+        width: 100% !important;
+    }
+
+    /*MAIN CONTENT*/
+    .Main-Content{
+        flex-direction: column;
+    }
+    .Sidebar{
+        margin: 0%;
+        width: 90%;
+    }
+
+    /*FOOTER*/
+    .footer-widget-holder{
+        flex-direction: column;
+    }
+    .footer-widget-holder .footer-widget{
+        padding: 5px 20px;
+    }
+    .CONTACT-DETAILS {
+        display: block;
+        justify-content: space-between;
+        margin: 10px 5px;
+        width: auto;
+        max-width: 90%;
+    }
+    .timings{
+        display: block;
+        margin: auto;
+        text-align: center;
+
+    }
+   
+}
+@media screen and (max-width: 370px){
+    .Services-holder, .Products-holder{
+        display: flex;
+        flex-direction: column;
+    }
+}
